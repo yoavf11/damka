@@ -1,0 +1,88 @@
+body {
+  background-color: #c7bdbd;
+  background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
+}
+
+.btn {
+  height: 70px;
+  width: 70px;
+  border-color: black;
+  border-width: 3px;
+}
+
+.Black {
+  height: 70px;
+  width: 70px;
+  background-color: black;
+}
+
+.opt {
+  background-color: rgb(255, 159, 215);
+}
+
+.pOpt {
+  background-color: rgb(157, 251, 226);
+}
+
+.White {
+  height: 70px;
+  width: 70px;
+  background-color: white;
+}
+
+.BlackPlayers {
+  height: 70px;
+  width: 70px;
+  background-image: url('../img/black-piece.png');
+  background-position: center;
+}
+
+.WhitePlayers {
+  height: 70px;
+  width: 70px;
+  background-image: url('../img/white-piece.png');
+  background-position: center
+}
+
+.WhiteQueen {
+  background-image: url('../img/white-queen.png');
+  background-position: center;
+  background-size: 150px;
+  background-repeat: no-repeat;
+}
+
+.BlackQueen {
+  background-image: url('../img/black-queen.png');
+  background-position: center;
+  background-size: 150px;
+  background-repeat: no-repeat;
+}
+
+#table {
+  margin: auto;
+}
+
+#resetButton {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: 120px;
+  height: 50px;
+  font: 30px;
+  text-align: center;
+  background-color: rgb(255, 159, 215);
+  border-radius: 30px;
+  border: none;
+  margin: 10px auto;
+  transition: 0.5s;
+}
+
+#resetButton:hover {
+  transform: scale(1.2);
+  background-color: rgb(157, 251, 226);
+}
+
+h1 {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 15px;
+  text-shadow: 4px 4px 4px #ffffff;
+}

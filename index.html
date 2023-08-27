@@ -1,25 +1,49 @@
-<!Doctype html>
-<html>
-
 <head>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="./style/game.css">
-  <meta charset="utf-8">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="./script/game.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./style/login.css">
   <script src="./script/login.js"></script>
+  <script src="./script/game.js"></script>
   <title>Damka</title>
 </head>
-
-<body>
-  <h1><b>Let's play Damka</b></h1>
-  <div class="container">
-    <div class="row"><button onclick="startNewGame()" id="resetButton">Reset Game</button></div>
-    <div class="row">
-      <div id="table"></div>
+<div>
+  <form id="overlay">
+    <!--   con = Container  for items in the form-->
+    <div class="con">
+      <!--     Start  header Content  -->
+      <header class="head-form">
+        <h2>Damka</h2>
+        <!--     A welcome message or an explanation of the login form -->
+        <p>Welcome to the Damka Game!</p>
+        <p>Please enter player's names:</p>
+      </header>
+      <!--     End  header Content  -->
+      <br>
+      <div class="field-set">
+        <!--   user name -->
+        <span class="input-item">
+          <i class="fa fa-user-circle"></i>
+        </span>
+        <!--   user name Input-->
+        <input class="form-input" id="player-1" type="text" placeholder="PLAYER 1" required>
+        <br>
+        <span class="input-item">
+          <i class="fa fa-user-circle"></i>
+        </span>
+        <!--   user name Input-->
+        <input class="form-input" id="player-2" type="text" placeholder="PLAYER 2" required>
+        <br>
+        <!--        buttons -->
+        <!--      button LogIn -->
+        <button type="button" class="log-in" onclick="startGame()">
+          <b>Play Now!</b>
+        </button>
+      </div>
+      <!--   other buttons -->
+      <div class="other">
+        <!--      Reset names button-->
+        <button onclick="resetNames()" class="btn submits frgt-pass">Reset Names</button>
+      </div>
     </div>
-  </div>
-</body>
-
-</html>
+    <!-- End Form -->
+  </form>
+</div>

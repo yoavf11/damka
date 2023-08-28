@@ -317,9 +317,9 @@ function player(id, color) {
 
 		}
 		if (numWhite == 0) {
-			Win('white')
+			Win(p2)
 		} else if (numBlack == 0) {
-			Win('black')
+			Win(p2)
 		}
 
 		board[String(this.id)[0]][String(this.id)[1]] = {};
@@ -377,7 +377,7 @@ function colorOptions(options, id, eat) {
 }
 
 function Win(color) {
-	alert(color + "Won!")
+	alert(color + " Won!")
 }
 
 function startNewGame() {
